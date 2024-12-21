@@ -1,4 +1,4 @@
-#!/bin/bash
+# !/bin/bash
 #================================================================================================
 #
 # This file is licensed under the terms of the GNU General Public
@@ -38,7 +38,7 @@
 #
 # Set default parameters
 make_path="${PWD}"
-openwrt_dir="documents"
+openwrt_dir="imagebuilder"
 imagebuilder_path="${make_path}/${openwrt_dir}"
 custom_files_path="${make_path}/config/imagebuilder/files"
 custom_config_file="${make_path}/config/imagebuilder/config"
