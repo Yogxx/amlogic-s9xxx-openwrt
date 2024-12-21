@@ -28,7 +28,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905x-b860h"
         type: choice
         options:
           - all
@@ -224,10 +224,10 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - IndoWRT
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Jakarta
   IMAGEBUILDER_SH: config/imagebuilder/imagebuilder.sh
 
 jobs:
