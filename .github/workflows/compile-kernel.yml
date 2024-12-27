@@ -74,10 +74,10 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -HappyNewYear
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Jakarta
 
 jobs:
   build:
