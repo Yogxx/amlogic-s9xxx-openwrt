@@ -26,7 +26,7 @@ on:
         options:
           - 5.4.y
           - 5.10.y
-          - 5.15.y
+          - 5.15.167
           - 6.1.y
           - 6.6.y
           - 6.1.y_6.6.y
@@ -47,7 +47,7 @@ on:
       kernel_toolchain:
         description: "Select the compilation toolchain"
         required: false
-        default: "gcc"
+        default: "gcc-13.3"
         type: choice
         options:
           - clang
