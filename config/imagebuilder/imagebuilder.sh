@@ -201,11 +201,11 @@ rebuild_firmware() {
         btrfs-progs hostapd hostapd-common hostapd-utils ip-full kmod-ath kmod-ath9k kmod-ath9k-common \
         kmod-ath9k-htc kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash \
         kmod-fs-btrfs kmod-mac80211 wireless-regdb wireless-tools iw wpa-cli wpa-supplicant netifd \
-        kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor \
+        kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 \
         libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
         luci-lua-runtime luci-app-vnstat2 kmod-nft-tproxy \
         perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 \
-        adb openssh-sftp-server ttyd luci-app-ttyd bash luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js \
+        adb openssh-sftp-server ttyd luci-app-ttyd bash \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
