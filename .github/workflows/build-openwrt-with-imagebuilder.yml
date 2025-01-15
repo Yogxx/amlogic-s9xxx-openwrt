@@ -224,7 +224,7 @@ on:
           - marshmallow
 
 env:
-  TZ: America/New_York
+  TZ: Asia/Jakarta
   IMAGEBUILDER_SH: config/imagebuilder/imagebuilder.sh
 
 jobs:
