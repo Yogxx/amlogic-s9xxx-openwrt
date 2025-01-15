@@ -185,21 +185,27 @@ rebuild_firmware() {
 
     # Selecting default packages, lib, theme, app and i18n, etc.
     my_packages="\
-        acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
-        cgi-io chattr comgt comgt-ncm containerd coremark coreutils coreutils-base64 coreutils-nohup \
-        coreutils-truncate curl docker docker-compose dockerd dosfstools dumpe2fs e2freefrag e2fsprogs \
-        exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git gzip hostapd-common iconv iw iwinfo jq \
-        jshn kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 libjson-script liblucihttp \
-        liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
-        perl-http-date perlbase-file perlbase-getopt perlbase-time perlbase-unicode perlbase-utf8 \
-        pigz ppp ppp-mod-pppoe proto-bonding pv rename resize2fs runc tar tini ttyd tune2fs \
-        uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch uuidgen wget-ssl whereis \
-        which wpad-basic wwan xfs-fsck xfs-mkfs xz xz-utils ziptool zoneinfo-asia zoneinfo-core zstd \
-        \
-        luci luci-base luci-compat luci-i18n-base-zh-cn luci-lib-base luci-lib-docker \
-        luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
-        luci-mod-status luci-mod-system luci-proto-3g luci-proto-bonding luci-proto-ipip luci-proto-ipv6 \
-        luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
+        -dnsmasq dnsmasq-full cgi-io libiwinfo libiwinfo-data libiwinfo-lua liblua \
+        liblucihttp liblucihttp-lua libubus-lua lua luci luci-app-firewall luci-app-opkg \
+        jshn kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 coreutils coreutils-base64 coreutils-nohup gawk lsblk lscpu \
+        luci-base luci-lib-base luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full \
+        luci-mod-network luci-mod-status luci-mod-system \
+        luci-theme-material rpcd rpcd-mod-file rpcd-mod-iwinfo rpcd-mod-luci \
+        rpcd-mod-rrdns uhttpd uhttpd-mod-ubus usbutils htop \
+        kmod-usb-core kmod-usb-net kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether kmod-usb-acm kmod-usb-net-qmi-wwan \
+        kmod-usb-net-rndis kmod-usb-serial-qualcomm kmod-usb-net-sierrawireless kmod-usb-ohci kmod-usb-serial \
+        kmod-nls-utf8 kmod-usb-serial-option kmod-usb-serial-sierrawireless kmod-usb-uhci kmod-usb2 \
+        kmod-usb-net-ipheth kmod-usb-net-cdc-mbim usbmuxd libusbmuxd-utils libimobiledevice-utils \
+        mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim luci-proto-3g luci-proto-ncm luci-proto-mbim modemmanager luci-proto-modemmanager \
+        usb-modeswitch nano picocom minicom wget curl libusb-1.0-0 \
+        btrfs-progs hostapd hostapd-common hostapd-utils ip-full kmod-ath kmod-ath9k kmod-ath9k-common \
+        kmod-ath9k-htc kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash \
+        kmod-fs-btrfs kmod-mac80211 wireless-regdb wireless-tools iw wpa-cli wpa-supplicant netifd \
+        kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152-vendor \
+        libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
+        luci-lua-runtime luci-app-vnstat2 kmod-nft-tproxy \
+        perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 \
+        adb openssh-sftp-server ttyd luci-app-ttyd bash luci-app-3ginfo-lite sms-tool luci-app-sms-tool-js \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
