@@ -198,9 +198,9 @@ rebuild_firmware() {
         kmod-usb-net-ipheth kmod-usb-net-cdc-mbim usbmuxd libusbmuxd-utils libimobiledevice-utils \
         mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim luci-proto-3g luci-proto-ncm luci-proto-mbim modemmanager luci-proto-modemmanager \
         usb-modeswitch nano picocom minicom wget curl libusb-1.0-0 \
-        btrfs-progs hostapd hostapd-common hostapd-utils ip-full kmod-ath kmod-ath9k kmod-ath9k-common \
+        btrfs-progs hostapd hostapd-common hostapd-utils ip-full kmod-ath ath9k-htc-firmware kmod-ath9k kmod-ath9k-common \
         kmod-ath9k-htc kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash \
-        kmod-fs-btrfs kmod-mac80211 wireless-regdb wireless-tools iw wpa-cli wpa-supplicant netifd \
+        kmod-fs-btrfs kmod-mac80211 wireless-regdb wireless-tools iw-full wpa-cli wpa-supplicant netifd \
         kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 \
         libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
         luci-lua-runtime luci-app-vnstat2 kmod-nft-tproxy \
