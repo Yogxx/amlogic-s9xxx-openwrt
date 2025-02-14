@@ -15,7 +15,7 @@ on:
       releases_branch:
         description: "Select the releases branch"
         required: false
-        default: "openwrt:23.05.5"
+        default: "openwrt:24.10.0"
         type: choice
         options:
           - openwrt:23.05.5
@@ -28,7 +28,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "s905x-b860h"
+        default: "renegade-rk3328"
         type: choice
         options:
           - all
@@ -195,7 +195,7 @@ on:
       auto_kernel:
         description: "Auto use the latest kernel"
         required: false
-        default: true
+        default: false
         type: boolean
       kernel_repo:
         description: "Set the kernel repository"
@@ -224,6 +224,8 @@ on:
           - angel
           - marshmallow
           - nanopi
+          - SE
+          - FE
 
 env:
   TZ: Asia/Jakarta
