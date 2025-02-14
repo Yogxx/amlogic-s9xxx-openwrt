@@ -25,6 +25,7 @@ on:
           - immortalwrt:23.05.4
           - immortalwrt:23.05.3
           - immortalwrt:23.05.2
+          - immortalwrt:24.10.0
       openwrt_board:
         description: "Select device board"
         required: false
@@ -195,7 +196,7 @@ on:
       auto_kernel:
         description: "Auto use the latest kernel"
         required: false
-        default: false
+        default: true
         type: boolean
       kernel_repo:
         description: "Set the kernel repository"
