@@ -195,9 +195,14 @@ rebuild_firmware() {
         kmod-ath9k-htc kmod-cfg80211 kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash \
         kmod-fs-btrfs kmod-mac80211 wireless-tools wpa-cli wpa-supplicant \
         libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring \
-        zoneinfo-core zoneinfo-asia nano htop unzip wget wget-ssl libmbedtls tar bash luci-app-mwan3 luci-theme-material \
+        zoneinfo-core zoneinfo-asia nano htop unzip wget wget-ssl libmbedtls tar bash luci-theme-material \
         netdata httping coreutils-timeout kmod-usb-net-rndis iperf3 \
         usbutils kmod-usb-net-cdc-ether usb-modeswitch \
+        kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-qmi-wwan uqmi luci-proto-qmi \
+        kmod-usb-net-cdc-ether kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan qmi-utils \
+        kmod-usb-serial-qualcomm kmod-usb-acm kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim umbim \
+        libmbim libqmi modemmanager modemmanager-rpcd luci-proto-modemmanager usbutils \
+        kmod-tun kmod-nft-tproxy \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
