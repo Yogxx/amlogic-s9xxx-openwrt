@@ -203,6 +203,7 @@ rebuild_firmware() {
         kmod-usb-serial-qualcomm kmod-usb-acm kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim umbim \
         libmbim libqmi modemmanager modemmanager-rpcd luci-proto-modemmanager usbutils \
         kmod-tun kmod-nft-tproxy \
+        perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 openssh-sftp-server
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
