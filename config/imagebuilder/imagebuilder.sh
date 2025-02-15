@@ -201,7 +201,7 @@ rebuild_firmware() {
         kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-qmi-wwan uqmi luci-proto-qmi \
         kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan qmi-utils \
         kmod-usb-serial-qualcomm kmod-usb-acm kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim umbim \
-        libmbim libqmi modemmanager modemmanager-rpcd luci-proto-modemmanager \
+        libmbim libqmi modemmanager luci-proto-modemmanager \
         kmod-tun kmod-nft-tproxy vnstat2 vnstati2 luci-app-vnstat2 \
         perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 openssh-sftp-server \
         \
