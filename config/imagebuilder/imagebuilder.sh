@@ -195,7 +195,7 @@ rebuild_firmware() {
         kmod-ath9k-htc kmod-cfg80211 kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash \
         kmod-fs-btrfs kmod-mac80211 wireless-tools wpa-cli wpa-supplicant \
         libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring \
-        zoneinfo-core zoneinfo-asia nano htop unzip wget wget-ssl tar bash luci-theme-material \
+        zoneinfo-core zoneinfo-asia nano htop unzip wget tar bash luci-theme-material \
         netdata httping coreutils coreutils-timeout coreutils-nohup kmod-usb-net-rndis iperf3 \
         usbutils kmod-usb-net-cdc-ether kmod-usb-net-asix-ax88179 kmod-usb-net-asix-ax88179 usb-modeswitch \
         kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-qmi-wwan uqmi luci-proto-qmi \
