@@ -299,6 +299,12 @@ jobs:
         if: ${{ steps.init.outputs.status }} == 'success' && !cancelled()
         run: |
           RELEASES_BRANCH="${{ inputs.releases_branch }}"
+          
+          rm -rf ./imagebuilder/openwrt-*/tmp
+          rm -rf ./imagebuilder/openwrt-*/dl
+          rm -f ./imagebuilder/openwrt-*/.packageinfo
+          rm -f ./imagebuilder/openwrt-*/.config.prev
+          
           chmod +x ${IMAGEBUILDER_SH}
           ${IMAGEBUILDER_SH} ${RELEASES_BRANCH}
           echo "RELEASES_TAG=${RELEASES_BRANCH/:/_}" >> ${GITHUB_ENV}
