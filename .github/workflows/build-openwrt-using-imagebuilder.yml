@@ -242,7 +242,7 @@ on:
           - openwrt
 
 env:
-  TZ: Indonesia/Jakarta
+  TZ: Asia/Jakarta
   IMAGEBUILDER_SH: config/imagebuilder/imagebuilder.sh
 
 jobs:
