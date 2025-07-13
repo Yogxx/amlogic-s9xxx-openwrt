@@ -177,7 +177,7 @@ rebuild_firmware() {
         -dnsmasq -libustream-openssl -libustream-openssl20201210 dnsmasq-full cgi-io libiwinfo libiwinfo-data libiwinfo-lua liblua liblucihttp liblucihttp-lua \
         libubus-lua lua luci luci-app-firewall luci-app-opkg luci-base luci-lib-base \
         luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
-        luci-mod-status luci-mod-system luci-proto-ipv6 luci-proto-ppp luci-ssl \
+        luci-mod-status luci-mod-system luci-proto-ipv6 luci-proto-ppp \
         rpcd rpcd-mod-file rpcd-mod-iwinfo rpcd-mod-luci \
         acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
         which xfs-fsck xfs-mkfs xz xz-utils ziptool zstd \
