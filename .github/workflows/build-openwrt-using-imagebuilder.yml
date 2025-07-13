@@ -27,7 +27,7 @@ on:
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905x-b860h"
         type: choice
         options:
           - all
@@ -225,6 +225,9 @@ on:
           - flippy
           - dev
           - beta
+          - marshmallow
+          - openwrt
+          - pineapple
       builder_name:
         description: "Set OpenWrt builder signature."
         required: false
@@ -234,9 +237,12 @@ on:
           - ophub
           - angel
           - yourname
+          - marshmallow
+          - pineapple
+          - openwrt
 
 env:
-  TZ: America/New_York
+  TZ: Indonesia/Jakarta
   IMAGEBUILDER_SH: config/imagebuilder/imagebuilder.sh
 
 jobs:
