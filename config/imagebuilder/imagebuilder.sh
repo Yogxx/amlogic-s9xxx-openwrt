@@ -181,7 +181,7 @@ rebuild_firmware() {
         rpcd rpcd-mod-file rpcd-mod-rrdns rpcd-mod-luci \
         acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
         which xfs-fsck xfs-mkfs xz xz-utils ziptool zstd \
-        losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
+        losetup lsattr lsblk lscpu mkf2fs mount-utils -openssl-util parted \
         exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git gzip jq \
         \
         uhttpd uhttpd-mod-ubus luci-compat btrfs-progs kmod-fs-btrfs \
