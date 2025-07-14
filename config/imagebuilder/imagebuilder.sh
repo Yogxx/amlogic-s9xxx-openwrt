@@ -177,17 +177,17 @@ rebuild_firmware() {
         -dnsmasq -libustream-openssl -libustream-openssl20201210 dnsmasq-full cgi-io libiwinfo libiwinfo-data libiwinfo-lua liblua liblucihttp liblucihttp-lua \
         libubus-lua lua luci luci-app-firewall luci-app-opkg luci-base luci-lib-base \
         luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
-        luci-mod-status luci-mod-system luci-proto-ipv6 luci-proto-ppp \
-        rpcd rpcd-mod-file rpcd-mod-iwinfo rpcd-mod-luci \
+        luci-mod-status luci-mod-system luci-proto-ppp \
+        rpcd rpcd-mod-file rpcd-mod-rrdns rpcd-mod-iwinfo rpcd-mod-luci \
         acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
         which xfs-fsck xfs-mkfs xz xz-utils ziptool zstd \
         losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
         exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git gzip jq \
         \
-        rpcd-mod-rrdns uhttpd uhttpd-mod-ubus luci-compat \
-        ath9k-htc-firmware btrfs-progs hostapd hostapd-utils kmod-ath kmod-ath9k kmod-ath9k-common \
-        kmod-ath9k-htc kmod-cfg80211 kmod-crypto-acompress kmod-crypto-crc32c kmod-crypto-hash \
-        kmod-fs-btrfs kmod-mac80211 wireless-tools wpa-cli wpa-supplicant \
+        uhttpd uhttpd-mod-ubus luci-compat btrfs-progs kmod-fs-btrfs \
+        -hostapd -hostapd-utils -kmod-ath -kmod-ath9k -kmod-ath9k-common -wifi-scripts \
+        -kmod-ath9k-htc -ath9k-htc-firmware -kmod-cfg80211 -kmod-crypto-cmac -kmod-crypto-ccm -kmod-crypto-acompress -kmod-crypto-crc32c -kmod-crypto-hash \
+        -iw -iwinfo -ucode-mod-nl80211 -ucode-mod-rtnl -kmod-mac80211 -wireless-regdb -wireless-tools -wpa-cli -wpa-supplicant \
         \
         libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring \
         zoneinfo-core zoneinfo-asia nano htop unzip wget tar bash luci-theme-material \
