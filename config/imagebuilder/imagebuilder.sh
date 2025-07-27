@@ -174,32 +174,27 @@ rebuild_firmware() {
 
     # Selecting default packages, lib, theme, app and i18n, etc.
     my_packages="\
-        -dnsmasq -libustream-openssl -libustream-openssl20201210 dnsmasq-full cgi-io libiwinfo libiwinfo-data libiwinfo-lua liblua liblucihttp liblucihttp-lua \
-        libubus-lua lua luci luci-app-firewall luci-app-opkg luci-base luci-lib-base \
-        luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
-        luci-mod-status luci-mod-system luci-proto-ppp \
-        rpcd rpcd-mod-file rpcd-mod-rrdns rpcd-mod-luci \
-        acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
-        which xfs-fsck xfs-mkfs xz xz-utils ziptool zstd \
-        losetup lsattr lsblk lscpu mkf2fs mount-utils -openssl-util parted \
-        exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git gzip jq \
-        \
-        uhttpd uhttpd-mod-ubus luci-compat btrfs-progs kmod-fs-btrfs \
-        -hostapd -hostapd-utils -kmod-ath -kmod-ath9k -kmod-ath9k-common -wifi-scripts -rpcd-mod-iwinfo\
-        -kmod-ath9k-htc -ath9k-htc-firmware -kmod-cfg80211 -kmod-crypto-cmac -kmod-crypto-ccm -kmod-crypto-acompress -kmod-crypto-crc32c -kmod-crypto-hash \
-        -iw -iwinfo -ucode-mod-nl80211 -ucode-mod-rtnl -kmod-mac80211 -wireless-regdb -wireless-tools -wpa-cli -wpa-supplicant \
-        \
-        libc php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring \
-        zoneinfo-core zoneinfo-asia nano htop unzip wget tar bash luci-theme-material \
-        netdata httping coreutils coreutils-timeout coreutils-nohup kmod-usb-net-rndis iperf3 \
-        usbutils kmod-usb-net-cdc-ether kmod-usb-net-asix-ax88179 kmod-usb-net-asix-ax88179 usb-modeswitch \
-        \
-        kmod-mii kmod-usb-net kmod-usb-wdm kmod-usb-net-qmi-wwan uqmi luci-proto-qmi \
-        kmod-usb-serial-option kmod-usb-serial kmod-usb-serial-wwan qmi-utils \
-        kmod-usb-serial-qualcomm kmod-usb-acm kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim umbim \
-        libmbim libqmi modemmanager luci-proto-modemmanager \
-        kmod-tun kmod-nft-tproxy vnstat2 vnstati2 luci-app-vnstat2 \
-        perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 openssh-sftp-server \
+-dnsmasq -openssl-util -hostapd -hostapd-utils -kmod-ath -kmod-ath9k -kmod-ath9k-common -wifi-scripts -rpcd-mod-iwinfo -kmod-ath9k-htc -ath9k-htc-firmware -kmod-cfg80211 -kmod-crypto-cmac -kmod-crypto-ccm -kmod-crypto-acompress -kmod-crypto-crc32c -kmod-crypto-hash -iw -iwinfo -ucode-mod-nl80211 -ucode-mod-rtnl -kmod-mac80211 -wireless-regdb -wireless-tools -wpa-cli -wpa-supplicant \
+dnsmasq-full cgi-io libiwinfo-data liblua \
+liblucihttp liblucihttp-lua libubus-lua lua luci-app-firewall \
+jshn -procd-ujail coreutils coreutils-base64 coreutils-nohup lsblk \
+luci-base luci-lib-base luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full \
+luci-mod-network luci-mod-status luci-mod-system \
+luci-theme-material rpcd rpcd-mod-file rpcd-mod-luci \
+rpcd-mod-rrdns uhttpd uhttpd-mod-ubus usbutils \
+kmod-usb-core kmod-usb-net kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether kmod-usb-acm kmod-usb-net-qmi-wwan \
+kmod-usb-net-rndis kmod-usb-serial-qualcomm kmod-usb-net-sierrawireless kmod-usb-serial \
+kmod-nls-utf8 kmod-usb-serial-option kmod-usb-serial-sierrawireless \
+kmod-usb-net-ipheth kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim usbmuxd libusbmuxd-utils libimobiledevice-utils \
+mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim modemmanager luci-proto-modemmanager \
+-usb-modeswitch nano wget curl libusb-1.0-0 \
+kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 \
+php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
+luci-compat luci-lib-ipkg parted btrfs-progs blkid smartmontools e2fsprogs \
+ruby ruby-yaml ruby-stringio ruby-psych ruby-pstore ruby-enc ruby-digest ruby-date ruby-bigdecimal \
+kmod-tun ip-full kmod-nft-socket kmod-inet-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
+luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop \
+adb openssh-sftp-server ttyd luci-app-ttyd bash \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
