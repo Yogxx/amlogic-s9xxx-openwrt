@@ -186,7 +186,7 @@ kmod-usb-core kmod-usb-net kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether km
 kmod-usb-net-rndis kmod-usb-serial-qualcomm kmod-usb-net-sierrawireless kmod-usb-serial \
 kmod-nls-utf8 kmod-usb-serial-option kmod-usb-serial-sierrawireless \
 kmod-usb-net-ipheth kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim usbmuxd libusbmuxd-utils libimobiledevice-utils \
-mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim modemmanager luci-proto-modemmanager sms-tool comgt autocore \
+mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim modemmanager luci-proto-modemmanager sms-tool comgt \
 -usb-modeswitch nano wget curl libusb-1.0-0 \
 kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 \
 php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
