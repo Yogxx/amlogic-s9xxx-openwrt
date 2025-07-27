@@ -194,7 +194,8 @@ luci-compat luci-lib-ipkg parted btrfs-progs blkid smartmontools e2fsprogs \
 ruby ruby-yaml ruby-stringio ruby-psych ruby-pstore ruby-enc ruby-digest ruby-date ruby-bigdecimal \
 kmod-tun ip-full kmod-nft-socket kmod-inet-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
 luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop \
-adb openssh-sftp-server ttyd luci-app-ttyd bash \
+adb openssh-sftp-server ttyd luci-app-ttyd bash bzip2 unzip \
+perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
