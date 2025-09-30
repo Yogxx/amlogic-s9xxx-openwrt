@@ -240,7 +240,7 @@ on:
           - yourname
 
 env:
-  TZ: Asia/JAKARTA
+  TZ: Jakarta/ASIA
   IMAGEBUILDER_SH: config/imagebuilder/imagebuilder.sh
 
 jobs:
