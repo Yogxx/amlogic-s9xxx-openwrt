@@ -174,34 +174,33 @@ rebuild_firmware() {
 
     # Selecting default packages, lib, theme, app and i18n, etc.
     my_packages="\
--dnsmasq -openssl-util -hostapd -hostapd-utils -kmod-ath -kmod-ath9k -kmod-ath9k-common -wifi-scripts -rpcd-mod-iwinfo -kmod-ath9k-htc -ath9k-htc-firmware -kmod-cfg80211 -kmod-crypto-cmac -kmod-crypto-ccm -kmod-crypto-acompress -kmod-crypto-crc32c -kmod-crypto-hash -iw -iwinfo -ucode-mod-nl80211 -ucode-mod-rtnl -kmod-mac80211 -wireless-regdb -wireless-tools -wpa-cli -wpa-supplicant \
+-dnsmasq -openssl-util -hostapd -hostapd-utils -kmod-usb-net-rtl8152-vendor -kmod-ath -kmod-ath9k -kmod-ath9k-common -wifi-scripts -rpcd-mod-iwinfo \
+-kmod-ath9k-htc -ath9k-htc-firmware -kmod-cfg80211 -kmod-crypto-cmac -kmod-crypto-ccm -kmod-crypto-acompress -kmod-crypto-crc32c -kmod-crypto-hash -iw -iwinfo -ucode-mod-nl80211 \
+-ucode-mod-rtnl -kmod-mac80211 -wireless-regdb -wireless-tools -wpa-cli -wpa-supplicant -kmod-rtw88-8723du \
 dnsmasq-full cgi-io libiwinfo-data liblua \
 liblucihttp liblucihttp-lua libubus-lua lua luci-app-firewall \
-jshn -procd-ujail coreutils coreutils-base64 coreutils-nohup lsblk \
+jshn coreutils coreutils-base64 coreutils-nohup coreutils-stat \
 luci-base luci-lib-base luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full \
+luci-compat luci-lib-ipkg parted btrfs-progs blkid e2fsprogs \
 luci-mod-network luci-mod-status luci-mod-system \
 luci-theme-material rpcd rpcd-mod-file rpcd-mod-luci \
 rpcd-mod-rrdns uhttpd uhttpd-mod-ubus usbutils \
 kmod-usb-core kmod-usb-net kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether kmod-usb-acm kmod-usb-net-qmi-wwan \
 kmod-usb-net-rndis kmod-usb-serial-qualcomm kmod-usb-net-sierrawireless kmod-usb-serial \
 kmod-nls-utf8 kmod-usb-serial-option kmod-usb-serial-sierrawireless \
-kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim libimobiledevice-utils \
-mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim modemmanager luci-proto-modemmanager sms-tool comgt \
-nano wget curl libusb-1.0-0 \
+kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim \
 kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 \
-\
-coreutils coreutils-stat coreutils-nohup coreutils-base64 \
-\
-php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-mbstring php8-mod-iconv php8-mod-zip zoneinfo-asia \
-perl perl-cgi perlbase-xsloader perl-http-date perlbase-utf8 \
-\
-luci-compat luci-lib-ipkg parted btrfs-progs blkid e2fsprogs \
-\
-libyaml libruby3.3 ruby ruby-yaml ruby-digest ruby-stringio ruby-psych ruby-pstore ruby-enc ruby-digest ruby-date ruby-bigdecimal \
-\
-kmod-tun ip-full kmod-nft-socket kmod-inet-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
-luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop \
-adb openssh-sftp-server ttyd luci-app-ttyd bash bzip2 gzip unzip \
+chat comgt mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim modemmanager luci-proto-modemmanager \
+nano wget curl libusb-1.0-0 \
+php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
+ruby ruby-yaml ruby-stringio ruby-psych ruby-pstore ruby-enc ruby-digest ruby-date ruby-bigdecimal \
+perl perl-cgi perl-html-parser perl-html-tagset perl-http-date \
+perlbase-base perlbase-bytes perlbase-class perlbase-config perlbase-cwd perlbase-dynaloader perlbase-encode perlbase-errno \
+perlbase-essential perlbase-fcntl perlbase-file perlbase-filehandle perlbase-if perlbase-integer perlbase-io perlbase-list perlbase-locale perlbase-mime \
+perlbase-params perlbase-posix perlbase-re perlbase-scalar perlbase-selectsaver perlbase-socket perlbase-symbol perlbase-time perlbase-unicore perlbase-utf8 perlbase-xsloader \
+kmod-tun ip-full kmod-nft-socket kmod-inet-diag kmod-netlink-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
+luci-app-package-manager luci-app-ramfree luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop \
+adb lsblk fdisk iperf3 bzip2 unzip sms-tool openssh-sftp-server ttyd luci-app-ttyd bash \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
