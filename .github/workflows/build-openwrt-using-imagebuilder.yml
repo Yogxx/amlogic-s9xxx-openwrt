@@ -18,9 +18,11 @@ on:
         default: "openwrt:24.10.3"
         type: choice
         options:
+          - openwrt:24.10.4
           - openwrt:24.10.3
           - openwrt:24.10.2
           - openwrt:24.10.1
+          - immortalwrt:24.10.4
           - immortalwrt:24.10.3
           - immortalwrt:24.10.2
           - immortalwrt:24.10.1
@@ -237,7 +239,8 @@ on:
         options:
           - ophub
           - angel
-          - yourname
+          - nothing
+          - marshmallow
 
 env:
   TZ: Asia/Jakarta
