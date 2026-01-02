@@ -117,19 +117,19 @@ custom_packages() {
     cd packages
 
     # Download luci-app-amlogic
-    amlogic_api="https://api.github.com/repos/ophub/luci-app-amlogic/releases"
+    # amlogic_api="https://api.github.com/repos/ophub/luci-app-amlogic/releases"
     #
-    amlogic_plugin="luci-app-amlogic"
-    amlogic_plugin_down="$(curl -s ${amlogic_api} | grep "browser_download_url" | grep -oE "https.*${amlogic_plugin}.*.ipk" | head -n 1)"
-    curl -fsSOJL ${amlogic_plugin_down}
-    [[ "${?}" -eq "0" ]] || error_msg "[ ${amlogic_plugin} ] download failed!"
-    echo -e "${INFO} The [ ${amlogic_plugin} ] is downloaded successfully."
+    # amlogic_plugin="luci-app-amlogic"
+    # amlogic_plugin_down="$(curl -s ${amlogic_api} | grep "browser_download_url" | grep -oE "https.*${amlogic_plugin}.*.ipk" | head -n 1)"
+    # curl -fsSOJL ${amlogic_plugin_down}
+    # [[ "${?}" -eq "0" ]] || error_msg "[ ${amlogic_plugin} ] download failed!"
+    # echo -e "${INFO} The [ ${amlogic_plugin} ] is downloaded successfully."
     #
-    amlogic_i18n="luci-i18n-amlogic"
-    amlogic_i18n_down="$(curl -s ${amlogic_api} | grep "browser_download_url" | grep -oE "https.*${amlogic_i18n}.*.ipk" | head -n 1)"
-    curl -fsSOJL ${amlogic_i18n_down}
-    [[ "${?}" -eq "0" ]] || error_msg "[ ${amlogic_i18n} ] download failed!"
-    echo -e "${INFO} The [ ${amlogic_i18n} ] is downloaded successfully."
+    #  amlogic_i18n="luci-i18n-amlogic"
+    # amlogic_i18n_down="$(curl -s ${amlogic_api} | grep "browser_download_url" | grep -oE "https.*${amlogic_i18n}.*.ipk" | head -n 1)"
+    # curl -fsSOJL ${amlogic_i18n_down}
+    # [[ "${?}" -eq "0" ]] || error_msg "[ ${amlogic_i18n} ] download failed!"
+    # echo -e "${INFO} The [ ${amlogic_i18n} ] is downloaded successfully."
 
     # Download other luci-app-xxx
     # ......
@@ -199,8 +199,6 @@ rebuild_firmware() {
         perlbase-base perlbase-bytes perlbase-class perlbase-config perlbase-cwd perlbase-dynaloader perlbase-encode perlbase-errno perlbase-essential perlbase-fcntl perlbase-file perlbase-filehandle perlbase-if perlbase-integer perlbase-io perlbase-list perlbase-locale perlbase-mime perlbase-params perlbase-posix perlbase-re perlbase-scalar perlbase-selectsaver perlbase-socket perlbase-symbol perlbase-time perlbase-unicore perlbase-utf8 perlbase-xsloader \
         kmod-tun ip-full kmod-nft-socket kmod-inet-diag kmod-netlink-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
         luci-app-package-manager luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop adb lsblk fdisk iperf3 bzip2 unzip sms-tool openssh-sftp-server ttyd luci-app-ttyd bash \
-        \
-        luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
         ${config_list} \
         "
