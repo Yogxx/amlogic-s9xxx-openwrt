@@ -198,7 +198,7 @@ rebuild_firmware() {
         perl perl-cgi perl-html-parser perl-html-tagset perl-http-date \
         perlbase-base perlbase-bytes perlbase-class perlbase-config perlbase-cwd perlbase-dynaloader perlbase-encode perlbase-errno perlbase-essential perlbase-fcntl perlbase-file perlbase-filehandle perlbase-if perlbase-integer perlbase-io perlbase-list perlbase-locale perlbase-mime perlbase-params perlbase-posix perlbase-re perlbase-scalar perlbase-selectsaver perlbase-socket perlbase-symbol perlbase-time perlbase-unicore perlbase-utf8 perlbase-xsloader \
         kmod-tun ip-full kmod-nft-socket kmod-inet-diag kmod-netlink-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
-        luci-app-package-manager luci-app-ramfree luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop adb lsblk fdisk iperf3 bzip2 unzip sms-tool openssh-sftp-server ttyd luci-app-ttyd bash \
+        luci-app-package-manager luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop adb lsblk fdisk iperf3 bzip2 unzip sms-tool openssh-sftp-server ttyd luci-app-ttyd bash \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
