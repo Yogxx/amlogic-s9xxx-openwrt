@@ -178,21 +178,27 @@ rebuild_firmware() {
 
     # Selecting default packages, lib, theme, app and i18n, etc.
     my_packages="\
-        acpid attr base-files bash bc blkid block-mount blockd bsdtar btrfs-progs busybox bzip2 \
-        cgi-io chattr comgt comgt-ncm containerd coremark coreutils coreutils-base64 coreutils-nohup \
-        coreutils-truncate curl docker docker-compose dockerd dosfstools dumpe2fs e2freefrag e2fsprogs \
-        exfat-mkfs f2fs-tools f2fsck fdisk gawk getopt git gzip hostapd-common iconv iw iwinfo jq \
-        jshn kmod-brcmfmac kmod-brcmutil kmod-cfg80211 kmod-mac80211 libjson-script liblucihttp \
-        liblucihttp-lua losetup lsattr lsblk lscpu mkf2fs mount-utils openssl-util parted \
-        perl-http-date perlbase-file perlbase-getopt perlbase-time perlbase-unicode perlbase-utf8 \
-        pigz ppp ppp-mod-pppoe pv rename resize2fs runc tar tini ttyd tune2fs \
-        uclient-fetch uhttpd uhttpd-mod-ubus unzip uqmi usb-modeswitch uuidgen wget-ssl whereis \
-        which wpad-basic wwan xfs-fsck xfs-mkfs xz xz-utils ziptool zoneinfo-asia zoneinfo-core zstd \
-        \
-        luci luci-base luci-compat luci-i18n-base-zh-cn luci-lib-base luci-lib-docker \
-        luci-lib-ip luci-lib-ipkg luci-lib-jsonc luci-lib-nixio luci-mod-admin-full luci-mod-network \
-        luci-mod-status luci-mod-system luci-proto-3g luci-proto-ipip luci-proto-ipv6 \
-        luci-proto-ncm luci-proto-openconnect luci-proto-ppp luci-proto-qmi luci-proto-relay \
+        -dnsmasq -openssl-util -hostapd -hostapd-utils -kmod-usb-net-rtl8152-vendor -kmod-ath -kmod-ath9k -kmod-ath9k-common -wifi-scripts -rpcd-mod-iwinfo -kmod-ath9k-htc -ath9k-htc-firmware -kmod-cfg80211 -kmod-crypto-cmac -kmod-crypto-ccm -kmod-crypto-acompress -kmod-crypto-crc32c -kmod-crypto-hash -iw -iwinfo -ucode-mod-nl80211 \
+        -ucode-mod-rtnl -kmod-mac80211 -wireless-regdb -wireless-tools -wpa-cli -wpa-supplicant -kmod-rtw88-8723du \
+        dnsmasq-full cgi-io libiwinfo-data liblua \
+        liblucihttp liblucihttp-lua libubus-lua lua luci-app-firewall jshn coreutils coreutils-base64 coreutils-nohup coreutils-stat \
+        luci-base luci-lib-base luci-lib-ip luci-lib-jsonc luci-lib-nixio luci-mod-admin-full \
+        luci-compat luci-lib-ipkg parted btrfs-progs blkid e2fsprogs \
+        luci-mod-network luci-mod-status luci-mod-system \
+        luci-theme-material rpcd rpcd-mod-file rpcd-mod-luci \
+        rpcd-mod-rrdns uhttpd uhttpd-mod-ubus usbutils \
+        kmod-usb-core kmod-usb-net kmod-usb-net-huawei-cdc-ncm kmod-usb-net-cdc-ether kmod-usb-acm kmod-usb-net-qmi-wwan \
+        kmod-usb-net-rndis kmod-usb-serial-qualcomm kmod-usb-net-sierrawireless kmod-usb-serial \
+        kmod-nls-utf8 kmod-usb-serial-option kmod-usb-serial-sierrawireless \
+        kmod-usb-net-cdc-ncm kmod-usb-net-cdc-mbim \
+        kmod-usb-net-asix kmod-usb-net-asix-ax88179 kmod-usb-net-rtl8150 kmod-usb-net-rtl8152 \
+        chat comgt mbim-utils qmi-utils libqrtr-glib libmbim libqmi uqmi umbim modemmanager luci-proto-modemmanager nano wget curl libusb-1.0-0 \
+        php8 php8-cgi php8-mod-session php8-mod-ctype php8-mod-fileinfo php8-mod-zip php8-mod-iconv php8-mod-mbstring zoneinfo-core zoneinfo-asia \
+        ruby ruby-yaml ruby-stringio ruby-psych ruby-pstore ruby-enc ruby-digest ruby-date ruby-bigdecimal \
+        perl perl-cgi perl-html-parser perl-html-tagset perl-http-date \
+        perlbase-base perlbase-bytes perlbase-class perlbase-config perlbase-cwd perlbase-dynaloader perlbase-encode perlbase-errno perlbase-essential perlbase-fcntl perlbase-file perlbase-filehandle perlbase-if perlbase-integer perlbase-io perlbase-list perlbase-locale perlbase-mime perlbase-params perlbase-posix perlbase-re perlbase-scalar perlbase-selectsaver perlbase-socket perlbase-symbol perlbase-time perlbase-unicore perlbase-utf8 perlbase-xsloader \
+        kmod-tun ip-full kmod-nft-socket kmod-inet-diag kmod-netlink-diag ca-bundle yq jq xtables-nft iptables-mod-tproxy \
+        luci-app-package-manager luci-app-ramfree luci-lua-runtime vnstat2 luci-app-vnstat2 kmod-nft-tproxy htop adb lsblk fdisk iperf3 bzip2 unzip sms-tool openssh-sftp-server ttyd luci-app-ttyd bash \
         \
         luci-app-amlogic luci-i18n-amlogic-zh-cn \
         \
