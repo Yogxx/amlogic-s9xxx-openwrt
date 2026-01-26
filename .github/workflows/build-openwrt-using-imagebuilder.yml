@@ -15,18 +15,21 @@ on:
       releases_branch:
         description: "Select the releases branch"
         required: false
-        default: "openwrt:24.10.5"
+        default: "openwrt:25.12.0-rc3"
         type: choice
         options:
-          - openwrt:24.10.5
           - openwrt:24.10.4
-          - immortalwrt:24.10.4
-          - immortalwrt:24.10.3
+          - openwrt:24.10.5
           - openwrt:25.12.0-rc1
+          - openwrt:25.12.0-rc2
+          - openwrt:25.12.0-rc3
+          - immortalwrt:24.10.3
+          - immortalwrt:24.10.4
+          
       openwrt_board:
         description: "Select device board"
         required: false
-        default: "all"
+        default: "s905x-b860h"
         type: choice
         options:
           - all
